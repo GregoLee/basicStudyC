@@ -6,5 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(basicStudyC
         #basic/lecture11/sec01strings1.c
         #basic/lecture11/sec01strings2.c
-        basic/lecture11/sec01strings3.c
+        #basic/lecture11/sec01strings3.c
+        #basic/lecture11/sec01strings4.c
+        basic/lecture11/sec01strings5.c
         )
