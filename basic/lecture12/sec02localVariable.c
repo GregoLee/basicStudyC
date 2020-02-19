@@ -3,22 +3,17 @@
 //
 /*
  * 지역변수(Global Variable)
- * 1) 프로그램의 어디서든 접근 가능한 변수를 말한다.
- * 2) main 함수가 실행되기도 전에 프로그램의 시작과 동시에 메모리에 할당
- * 3) 프로그램의 크기가 커질 수록 전역 변수로 인해 프로그램이 복잡해질 수 있다.
- * 4) 메모리의 데이터(Data) 영역에 적재된다.
+ * 1) 프로그램에서 특정한 블록(Block)에서만 접근할 수 있는 변수
+ * 2) 함수가 실행될 때마다 메모리에 할당되어 함수가 종료되면 메모리에서 해제
+ * 3) 메모리의 스택(Stack) 영역에 기록
  */
 #include <stdio.h>
 
-int a = 5;
-
-int changeValue() {
-    a = 10;
-}
-
 int main(void) {
-    printf("%d\n", a);
-    changeValue();
-    printf("%d\n", a);
+    int a = 7;
+    if(1) {
+        int a = 5;
+    }
+    printf("%d", a);
     return 0;
 }

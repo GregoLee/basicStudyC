@@ -9,5 +9,9 @@ add_executable(basicStudyC
         #basic/lecture11/sec01strings3.c
         #basic/lecture11/sec01strings4.c
         #basic/lecture11/sec01strings5.c
-        basic/lecture12/sec01globalVariable.c
+        #basic/lecture12/sec01globalVariable.c
+        #basic/lecture12/sec02localVariable.c
+        #basic/lecture12/sec03staticVariable.c
+        #basic/lecture12/sec04registerVariable.c
+        basic/lecture12/sec05howToControlParameters.c
         )
