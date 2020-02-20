@@ -24,5 +24,9 @@ add_executable(basicStudyC
         #basic/lecture13/sec02pointeriArray6.c
         #basic/lecture14/sec01dynamicMemFunc01.c
         #basic/lecture14/sec01dynamicMemFunc02.c
-        basic/lecture14/sec02dynamicMemStr02.c
+        #basic/lecture14/sec02dynamicMemStr02.c
+        #basic/lecture15/sec01funcPointer1.c
+        #basic/lecture15/sec01funcPointer2.c
+        #basic/lecture15/sec01funcPointer3.c
+        basic/lecture15/sec01funcPointer4.c
         )
