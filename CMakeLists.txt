@@ -13,5 +13,13 @@ add_executable(basicStudyC
         #basic/lecture12/sec02localVariable.c
         #basic/lecture12/sec03staticVariable.c
         #basic/lecture12/sec04registerVariable.c
-        basic/lecture12/sec05howToControlParameters.c
+        #basic/lecture12/sec05howToControlParameters.c
+        #basic/lecture13/sec01multiArray1.c
+        #basic/lecture13/sec01multiArray2.c
+        #basic/lecture13/sec02pointeriArray1.c
+        #basic/lecture13/sec02pointeriArray2.c
+        #basic/lecture13/sec02pointeriArray3.c
+        #basic/lecture13/sec02pointeriArray4.c
+        #basic/lecture13/sec02pointeriArray5.c
+        basic/lecture13/sec02pointeriArray6.c
         )
