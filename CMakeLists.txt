@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.13)
 project(basicStudyC)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_C_FLAGS "-fexec-charset=CP949 -g -Wall")
 
 add_executable(basicStudyC
         #basic/lecture11/sec01strings1.c
@@ -28,5 +29,11 @@ add_executable(basicStudyC
         #basic/lecture15/sec01funcPointer1.c
         #basic/lecture15/sec01funcPointer2.c
         #basic/lecture15/sec01funcPointer3.c
-        basic/lecture15/sec01funcPointer4.c
+        #basic/lecture15/sec01funcPointer4.c
+        #basic/lecture16/sec01structure1.c
+        #basic/lecture16/sec01structure2.c
+        #basic/lecture16/sec01structure3.c
+        #basic/lecture16/sec01structure4.c
+        #basic/lecture16/sec01structure5.c
+        basic/lecture16/sec02structurePointer.c
         )
