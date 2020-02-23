@@ -2,14 +2,14 @@
 // Created by invin on 2020-02-20.
 //
 /*
- * µ¿Àû ¸Ş¸ğ¸® ÇÒ´çÀÇ ´Ù¾çÇÑ ¿¹Á¦
- * ÂüÁ¶ : https://codingdog.tistory.com/entry/c%EC%96%B8%EC%96%B4-malloc-%ED%95%A8%EC%88%98-%EB%8F%99%EC%A0%81-%ED%95%A0%EB%8B%B9-%EA%B0%84%EB%8B%A8%ED%95%98%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%B4-%EB%B4%85%EC%8B%9C%EB%8B%A4
+ * ë™ì  ë©”ëª¨ë¦¬ í• ë‹¹ì˜ ë‹¤ì–‘í•œ ì˜ˆì œ
+ * ì°¸ì¡° : https://codingdog.tistory.com/entry/c%EC%96%B8%EC%96%B4-malloc-%ED%95%A8%EC%88%98-%EB%8F%99%EC%A0%81-%ED%95%A0%EB%8B%B9-%EA%B0%84%EB%8B%A8%ED%95%98%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%B4-%EB%B4%85%EC%8B%9C%EB%8B%A4
  */
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void) {
-    //¸Ş¸ğ¸® ÇÒ´ç
+    //ë©”ëª¨ë¦¬ í• ë‹¹
     int n = 3;
     int **p = (int**)malloc(sizeof(int*)*n);
 
@@ -18,13 +18,13 @@ int main(void) {
         *(p+i) = (int*)malloc(sizeof(int)*m);
     }
 
-    //°ª ÇÒ´ç
+    //ê°’ í• ë‹¹
     for(int i=0; i<n; i++) {
         for(int j=0; j<m; j++) {
             *(*(p+i)+j) = i * m + j;
         }
     }
-    //Ãâ·Â
+    //ì¶œë ¥
     for(int i=0; i<n; i++) {
         for(int j=0; j<m; j++) {
             printf("%d ", *(*(p+i)+j) );

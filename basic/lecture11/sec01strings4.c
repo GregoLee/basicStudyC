@@ -5,12 +5,12 @@
 
 int main(void) {
     char a[100];
-    // gets() ÇÔ¼ö´Â ¹öÆÛÀÇ Å©±â¸¦ ¹þ¾î³ªµµ ÀÔ·ÂÀ» ¹Þ¾Æ¹ö¸².
+    // gets() í•¨ìˆ˜ëŠ” ë²„í¼ì˜ í¬ê¸°ë¥¼ ë²—ì–´ë‚˜ë„ ìž…ë ¥ì„ ë°›ì•„ë²„ë¦¼.
     gets(a);
 
-    // 1. C11 Ç¥ÁØºÎÅÍ´Â ¹öÆÛÀÇ Å©±â¸¦ Ã¶ÀúÈ÷ ÁöÅ°´Â gets_s() ÇÔ¼ö°¡ Ãß°¡µÇ¾ú´Ù.
-    // 2. gets_s()¸¦ ÀÌ¿ëÇÏ´Â °æ¿ì ¹üÀ§¸¦ ³ÑÀ¸¸é ±× Áï½Ã ·±Å¸ÀÓ(Runtime)¿À·ù ¹ß»ý
-    // 3. gcc¿¡¼­´Â ±¸µ¿ÀÌ ¾ÈµÉ ¼ö ÀÖÀ¸´Ï ÂüÁ¶ÇÏ±æ...
+    // 1. C11 í‘œì¤€ë¶€í„°ëŠ” ë²„í¼ì˜ í¬ê¸°ë¥¼ ì² ì €ížˆ ì§€í‚¤ëŠ” gets_s() í•¨ìˆ˜ê°€ ì¶”ê°€ë˜ì—ˆë‹¤.
+    // 2. gets_s()ë¥¼ ì´ìš©í•˜ëŠ” ê²½ìš° ë²”ìœ„ë¥¼ ë„˜ìœ¼ë©´ ê·¸ ì¦‰ì‹œ ëŸ°íƒ€ìž„(Runtime)ì˜¤ë¥˜ ë°œìƒ
+    // 3. gccì—ì„œëŠ” êµ¬ë™ì´ ì•ˆë  ìˆ˜ ìžˆìœ¼ë‹ˆ ì°¸ì¡°í•˜ê¸¸...
     //gets_s(a, sizeof(a));
     printf("%s\n", a);
     return 0;

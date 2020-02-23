@@ -2,9 +2,9 @@
 // Created by invin on 2020-02-17.
 //
 /*
- * ·¹Áö½ºÅÍº¯¼ö(Register Variable)
- * 1) ¸ÞÀÎ ¸Þ¸ð¸® ´ë½Å CPUÀÇ ·¹Áö½ºÅÍ¸¦ »ç¿ëÇÏ´Â º¯¼ö
- * 2) ·¹Áö½ºÅÍ´Â ¸Å¿ì ÇÑÁ¤µÇ¾î ÀÖÀ¸¹Ç·Î ½ÇÁ¦·Î ·¹Áö½ºÅÍ¿¡¼­ Ã³¸®µÉ Áö´Â Àå´ãÇÒ ¼ö ¾ø´Ù.
+ * ë ˆì§€ìŠ¤í„°ë³€ìˆ˜(Register Variable)
+ * 1) ë©”ì¸ ë©”ëª¨ë¦¬ ëŒ€ì‹  CPUì˜ ë ˆì§€ìŠ¤í„°ë¥¼ ì‚¬ìš©í•˜ëŠ” ë³€ìˆ˜
+ * 2) ë ˆì§€ìŠ¤í„°ëŠ” ë§¤ìš° í•œì •ë˜ì–´ ìžˆìœ¼ë¯€ë¡œ ì‹¤ì œë¡œ ë ˆì§€ìŠ¤í„°ì—ì„œ ì²˜ë¦¬ë  ì§€ëŠ” ìž¥ë‹´í•  ìˆ˜ ì—†ë‹¤.
  */
 #include <stdio.h>
 int main(void) {

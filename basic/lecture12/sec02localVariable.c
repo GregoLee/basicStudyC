@@ -2,10 +2,10 @@
 // Created by invin on 2020-02-17.
 //
 /*
- * Áö¿ªº¯¼ö(Global Variable)
- * 1) ÇÁ·Î±×·¥¿¡¼­ Æ¯Á¤ÇÑ ºí·Ï(Block)¿¡¼­¸¸ Á¢±ÙÇÒ ¼ö ÀÖ´Â º¯¼ö
- * 2) ÇÔ¼ö°¡ ½ÇÇàµÉ ¶§¸¶´Ù ¸Þ¸ð¸®¿¡ ÇÒ´çµÇ¾î ÇÔ¼ö°¡ Á¾·áµÇ¸é ¸Þ¸ð¸®¿¡¼­ ÇØÁ¦
- * 3) ¸Þ¸ð¸®ÀÇ ½ºÅÃ(Stack) ¿µ¿ª¿¡ ±â·Ï
+ * ì§€ì—­ë³€ìˆ˜(Global Variable)
+ * 1) í”„ë¡œê·¸ëž¨ì—ì„œ íŠ¹ì •í•œ ë¸”ë¡(Block)ì—ì„œë§Œ ì ‘ê·¼í•  ìˆ˜ ìžˆëŠ” ë³€ìˆ˜
+ * 2) í•¨ìˆ˜ê°€ ì‹¤í–‰ë  ë•Œë§ˆë‹¤ ë©”ëª¨ë¦¬ì— í• ë‹¹ë˜ì–´ í•¨ìˆ˜ê°€ ì¢…ë£Œë˜ë©´ ë©”ëª¨ë¦¬ì—ì„œ í•´ì œ
+ * 3) ë©”ëª¨ë¦¬ì˜ ìŠ¤íƒ(Stack) ì˜ì—­ì— ê¸°ë¡
  */
 #include <stdio.h>
 

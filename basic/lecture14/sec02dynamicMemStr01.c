@@ -2,24 +2,24 @@
 // Created by invin on 2020-02-20.
 //
 /*
- * µ¿ÀûÀ¸·Î ¹®ÀÚ¿­ Ã³¸®ÇÏ±â
- * 1) ÀÏ°ýÀûÀÎ ¹üÀ§ÀÇ ¸Þ¸ð¸®¸¦ ¸ðµÎ Æ¯Á¤ÇÑ °ªÀ¸·Î ¼³Á¤ÇÏ±â À§ÇØ¼­´Â memset()À» »ç¿ë
- * 2) »ç¿ë¹ý
- *    - memset(Æ÷ÀÎÅÍ, °ª, Å©±â);
- * 3) ÇÑ ¹ÙÀÌÆ® ¾¿ °ªÀ» ÀúÀåÇÏ¹Ç·Î ¹®ÀÚ¿­ ¹è¿­ÀÇ Ã³¸® ¹æ½Ä°ú Èí»çÇÏ´Ù.
- * 4) µû¶ó¼­ memset() ÇÔ¼ö´Â <string.h> ¶óÀÌºê·¯¸®¿¡ ¼±¾ðµÇ¾î ÀÖ´Ù.
+ * ë™ì ìœ¼ë¡œ ë¬¸ìžì—´ ì²˜ë¦¬í•˜ê¸°
+ * 1) ì¼ê´„ì ì¸ ë²”ìœ„ì˜ ë©”ëª¨ë¦¬ë¥¼ ëª¨ë‘ íŠ¹ì •í•œ ê°’ìœ¼ë¡œ ì„¤ì •í•˜ê¸° ìœ„í•´ì„œëŠ” memset()ì„ ì‚¬ìš©
+ * 2) ì‚¬ìš©ë²•
+ *    - memset(í¬ì¸í„°, ê°’, í¬ê¸°);
+ * 3) í•œ ë°”ì´íŠ¸ ì”© ê°’ì„ ì €ìž¥í•˜ë¯€ë¡œ ë¬¸ìžì—´ ë°°ì—´ì˜ ì²˜ë¦¬ ë°©ì‹ê³¼ í¡ì‚¬í•˜ë‹¤.
+ * 4) ë”°ë¼ì„œ memset() í•¨ìˆ˜ëŠ” <string.h> ë¼ì´ë¸ŒëŸ¬ë¦¬ì— ì„ ì–¸ë˜ì–´ ìžˆë‹¤.
  */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 int main(void) {
-    // 1) memset() ÇÔ¼ö¸¦ ÀÌ¿ëÇØ Æ¯Á¤ ¹üÀ§ÀÇ ¸Þ¸ð¸®¸¦ °¡µæ Ã¤¿î´Ù.
-    // 2) ±âÁ¸¿¡´Â ´Ü¼øÈ÷ ¹Ýº¹¹®À» ÀÌ¿ëÇØ ¿ø¼Ò¸¦ Ã³¸®ÇßÀ¸³ª memset()Àº ÀÏ¹ÝÀûÀ¸·Î ´õ ºü¸£°Ô µ¿ÀÛÇÑ´Ù.
+    // 1) memset() í•¨ìˆ˜ë¥¼ ì´ìš©í•´ íŠ¹ì • ë²”ìœ„ì˜ ë©”ëª¨ë¦¬ë¥¼ ê°€ë“ ì±„ìš´ë‹¤.
+    // 2) ê¸°ì¡´ì—ëŠ” ë‹¨ìˆœížˆ ë°˜ë³µë¬¸ì„ ì´ìš©í•´ ì›ì†Œë¥¼ ì²˜ë¦¬í–ˆìœ¼ë‚˜ memset()ì€ ì¼ë°˜ì ìœ¼ë¡œ ë” ë¹ ë¥´ê²Œ ë™ìž‘í•œë‹¤.
     char *a = malloc(100);
     memset(a, 'A', 100);
     for(int i=0; i<100; i++) {
         printf("%c ", a[i]);
-    } // A A A ... A (A°¡ 100°³ Ãâ·Â)
+    } // A A A ... A (Aê°€ 100ê°œ ì¶œë ¥)
     return 0;
 }

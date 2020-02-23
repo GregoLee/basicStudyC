@@ -2,25 +2,25 @@
 // Created by invin on 2020-02-17.
 //
 /*
- * ÇÔ¼öÀÇ ¸Å°³º¯¼ö
- * 1) ÇÔ¼ö¸¦ È£ÃâÇÒ ¶§ ÇÔ¼ö¿¡ ÇÊ¿äÇÑ µ¥ÀÌÅÍ¸¦ ¸Å°³º¯¼ö·Î Àü´Þ
- * 2) Àü´Þ ¹æ½ÄÀº ´ÙÀ½°ú °°À½
- *    °¡) °ª¿¡ ÀÇÇÑ Àü´Þ (Call by Value) : °ªÀ» Àü´Þ, ÇÔ¼ö ³»¿¡¼­ º¯¼ö°¡ »õ·Ó°Ô »ý¼º
- *    ³ª) ÂüÁ¶¿¡ ÀÇÇÑ Àü´Þ (Call by Reference) : ÁÖ¼Ò¸¦ Àü´Þ, ¿ø·¡ÀÇ º¯¼ö ÀÚÃ¼¿¡ Á¢±Ù °¡´É
+ * í•¨ìˆ˜ì˜ ë§¤ê°œë³€ìˆ˜
+ * 1) í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•  ë•Œ í•¨ìˆ˜ì— í•„ìš”í•œ ë°ì´í„°ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ì „ë‹¬
+ * 2) ì „ë‹¬ ë°©ì‹ì€ ë‹¤ìŒê³¼ ê°™ìŒ
+ *    ê°€) ê°’ì— ì˜í•œ ì „ë‹¬ (Call by Value) : ê°’ì„ ì „ë‹¬, í•¨ìˆ˜ ë‚´ì—ì„œ ë³€ìˆ˜ê°€ ìƒˆë¡­ê²Œ ìƒì„±
+ *    ë‚˜) ì°¸ì¡°ì— ì˜í•œ ì „ë‹¬ (Call by Reference) : ì£¼ì†Œë¥¼ ì „ë‹¬, ì›ëž˜ì˜ ë³€ìˆ˜ ìžì²´ì— ì ‘ê·¼ ê°€ëŠ¥
  */
 #include <stdio.h>
 
-// 2-°¡) Call by Value
-//   - µÎ °³ÀÇ °ªÀ» ³ÖÀ¸¸é »õ·Ó°Ô µÎ º¯¼ö°¡ ¸Þ¸ð¸® ³»¿¡ ÇÒ´çµÇ¾î Ã³¸®
-//   - ¿ø·¡ º¯¼öÀÇ °ª¿¡´Â ¿µÇâÀ» ¹ÌÄ¡Áö ¾ÊÀ½
+// 2-ê°€) Call by Value
+//   - ë‘ ê°œì˜ ê°’ì„ ë„£ìœ¼ë©´ ìƒˆë¡­ê²Œ ë‘ ë³€ìˆ˜ê°€ ë©”ëª¨ë¦¬ ë‚´ì— í• ë‹¹ë˜ì–´ ì²˜ë¦¬
+//   - ì›ëž˜ ë³€ìˆ˜ì˜ ê°’ì—ëŠ” ì˜í–¥ì„ ë¯¸ì¹˜ì§€ ì•ŠìŒ
 void add_by_value(int a, int b) {
     a = a + b;
 }
 
-// 2-³ª) Call by Reference
-//   - º¯¼öÀÇ ÁÖ¼Ò¸¦ Àü´Þ
-//   - ¿ø·¡ º¯¼öÀÇ °ª¿¡ Á¢±ÙÇÏ¿© °ªÀ» º¯°æÇÒ ¼ö ÀÖÀ½
-//   - 'Æ÷ÀÎÅÍ(pointer)' º¯¼ö¸¦ Àü´Þ
+// 2-ë‚˜) Call by Reference
+//   - ë³€ìˆ˜ì˜ ì£¼ì†Œë¥¼ ì „ë‹¬
+//   - ì›ëž˜ ë³€ìˆ˜ì˜ ê°’ì— ì ‘ê·¼í•˜ì—¬ ê°’ì„ ë³€ê²½í•  ìˆ˜ ìžˆìŒ
+//   - 'í¬ì¸í„°(pointer)' ë³€ìˆ˜ë¥¼ ì „ë‹¬
 void add_by_reference(int *a, int b) {
     *a = (*a) + b;
 }

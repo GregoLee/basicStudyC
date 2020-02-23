@@ -2,21 +2,21 @@
 // Created by invin on 2020-02-21.
 //
 /*
- * ±¸Á¶Ã¼(Structure)
- * 1) ±¸Á¶Ã¼¸¦ È°¿ëÇÏ¿© Ä¿½ºÅÒ ÀÚ·áÇüÀ» ¸¸µç´Ù.
- *    - ¿©·¯ °³ÀÇ º¯¼ö¸¦ ¹­¾î ÇÏ³ªÀÇ °´Ã¼¸¦ Ç¥ÇöÇÏ°íÀÚ ÇÒ ¶§ ±¸Á¶Ã¼¸¦ »ç¿ë
- *    - struct ±¸Á¶Ã¼¸í {
- *        ÀÚ·áÇü1 º¯¼ö¸í1;
- *        ÀÚ·áÇü2 º¯¼ö¸í2;
+ * êµ¬ì¡°ì²´(Structure)
+ * 1) êµ¬ì¡°ì²´ë¥¼ í™œìš©í•˜ì—¬ ì»¤ìŠ¤í…€ ìžë£Œí˜•ì„ ë§Œë“ ë‹¤.
+ *    - ì—¬ëŸ¬ ê°œì˜ ë³€ìˆ˜ë¥¼ ë¬¶ì–´ í•˜ë‚˜ì˜ ê°ì²´ë¥¼ í‘œí˜„í•˜ê³ ìž í•  ë•Œ êµ¬ì¡°ì²´ë¥¼ ì‚¬ìš©
+ *    - struct êµ¬ì¡°ì²´ëª… {
+ *        ìžë£Œí˜•1 ë³€ìˆ˜ëª…1;
+ *        ìžë£Œí˜•2 ë³€ìˆ˜ëª…2;
  *        ...
  *      }
- * 2) ÄÉ¸¯ÅÍ, ¸ó½ºÅÍ, ÇÐ»ý, ÁÂÇ¥ µî ´Ù¾çÇÑ °´Ã¼µéÀ» Ç¥ÇöÇÒ ¼ö ÀÖ´Ù.
+ * 2) ì¼€ë¦­í„°, ëª¬ìŠ¤í„°, í•™ìƒ, ì¢Œí‘œ ë“± ë‹¤ì–‘í•œ ê°ì²´ë“¤ì„ í‘œí˜„í•  ìˆ˜ ìžˆë‹¤.
  */
 #include <stdio.h>
 #include <string.h>
 
-// ÃÖ±Ù¿¡´Â ÀÍ¸í ±¸Á¶Ã¼ÀÇ °³³äÀÌ µîÀåÇÏ¿©, ±¸Á¶Ã¼ ÀÌ¸§ ºÎºÐÀ» ºñ¿ö ³õ¾Æµµ µÈ´Ù.
-typedef struct { // ÇÐ»ý ±¸Á¶Ã¼ Á¤ÀÇ
+// ìµœê·¼ì—ëŠ” ìµëª… êµ¬ì¡°ì²´ì˜ ê°œë…ì´ ë“±ìž¥í•˜ì—¬, êµ¬ì¡°ì²´ ì´ë¦„ ë¶€ë¶„ì„ ë¹„ì›Œ ë†“ì•„ë„ ëœë‹¤.
+typedef struct { // í•™ìƒ êµ¬ì¡°ì²´ ì •ì˜
     char studentId[20];
     char name[20];
     int grade;
@@ -26,7 +26,7 @@ typedef struct { // ÇÐ»ý ±¸Á¶Ã¼ Á¤ÀÇ
 int main(void) {
     Student s = { "2007231115", "Jaeyoung Lee", 4, "Economy" };
 
-    // ±¸Á¶Ã¼ ³»¿ë Ãâ·Â
+    // êµ¬ì¡°ì²´ ë‚´ìš© ì¶œë ¥
     printf("ID : %s\n", s.studentId);
     printf("Name : %s\n", s.name);
     printf("Grade : %d\n", s.grade);

@@ -2,10 +2,10 @@
 // Created by invin on 2020-02-17.
 //
 /*
- * Á¤Àûº¯¼ö(Static Variable)
- * 1) Æ¯Á¤ÇÑ ºí·Ï¿¡¼­¸¸ Á¢±ÙÇÒ ¼ö ÀÖ´Â º¯¼ö
- * 2) ÇÁ·Î±×·¥ÀÌ ½ÇÇàµÉ ¶§ ¸Þ¸ð¸®¿¡ ÇÒ´çµÇ¾î ÇÁ·Î±×·¥ÀÌ Á¾·áµÇ¸é ¸Þ¸ð¸®¿¡¼­ ÇØÁ¦
- * 3) ¸Þ¸ð¸®ÀÇ µ¥ÀÌÅÍ(Data) ¿µ¿ª¿¡ ÀûÀç
+ * ì •ì ë³€ìˆ˜(Static Variable)
+ * 1) íŠ¹ì •í•œ ë¸”ë¡ì—ì„œë§Œ ì ‘ê·¼í•  ìˆ˜ ìžˆëŠ” ë³€ìˆ˜
+ * 2) í”„ë¡œê·¸ëž¨ì´ ì‹¤í–‰ë  ë•Œ ë©”ëª¨ë¦¬ì— í• ë‹¹ë˜ì–´ í”„ë¡œê·¸ëž¨ì´ ì¢…ë£Œë˜ë©´ ë©”ëª¨ë¦¬ì—ì„œ í•´ì œ
+ * 3) ë©”ëª¨ë¦¬ì˜ ë°ì´í„°(Data) ì˜ì—­ì— ì ìž¬
  */
 #include <stdio.h>
 void process() {

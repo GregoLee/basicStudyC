@@ -2,12 +2,12 @@
 // Created by invin on 2020-02-20.
 //
 /*
- * 2Â÷¿ø ¹è¿­ÀÇ ÇÊ¿ä¼º
- * 1) Çà·Ä µ¥ÀÌÅÍ¸¦ Ç¥ÇöÇÒ ¶§
- *     , ±×·¡ÇÁ ¾Ë°í¸®ÁòÀ» Ã³¸®ÇÒ ¶§
- *     , ´Ù¼öÀÇ ½Ç»ýÈ° µ¥ÀÌÅÍ¸¦ Ã³¸®ÇÒ ¶§ µî
- * 2) ÀÛ¼º¹ý
- *    - {dataType} {name}[Çà][¿­] = { {valueA_1, valueB_1, ...}, {valueA_2, valueB_2, ...}, ... }
+ * 2ì°¨ì› ë°°ì—´ì˜ í•„ìš”ì„±
+ * 1) í–‰ë ¬ ë°ì´í„°ë¥¼ í‘œí˜„í•  ë•Œ
+ *     , ê·¸ëž˜í”„ ì•Œê³ ë¦¬ì¦˜ì„ ì²˜ë¦¬í•  ë•Œ
+ *     , ë‹¤ìˆ˜ì˜ ì‹¤ìƒí™œ ë°ì´í„°ë¥¼ ì²˜ë¦¬í•  ë•Œ ë“±
+ * 2) ìž‘ì„±ë²•
+ *    - {dataType} {name}[í–‰][ì—´] = { {valueA_1, valueB_1, ...}, {valueA_2, valueB_2, ...}, ... }
  *    - int arr[10][10];
  */
 #include<stdio.h>
