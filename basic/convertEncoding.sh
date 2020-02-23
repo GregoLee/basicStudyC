@@ -1,3 +1,5 @@
+#Run example
+#./convertEncoding.sh {folderName}
 find "$1" -name "*.c" | while read filename
 do
 tempName=${filename}~temp~.c
