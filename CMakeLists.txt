@@ -37,5 +37,8 @@ add_executable(basicStudyC
         #basic/lecture16/sec02structurePointer.c
         #basic/lecture17/sec01fileIO2.c
         #basic/lecture17/sec01fileIO3.c
-        basic/Chapter01/lecture17/sec01fileIO4.c
+        #basic/Chapter01/lecture17/sec01fileIO4.c
+        #basic/Chapter02/lecture20/sec01ArrayList.c
+        #basic/Chapter02/lecture20/sec02LinkedList1.c
+        basic/Chapter02/lecture20/sec02LinkedList2.c
         )
