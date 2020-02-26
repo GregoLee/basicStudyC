@@ -40,5 +40,6 @@ add_executable(basicStudyC
         #basic/Chapter01/lecture17/sec01fileIO4.c
         #basic/Chapter02/lecture20/sec01ArrayList.c
         #basic/Chapter02/lecture20/sec02LinkedList1.c
-        basic/Chapter02/lecture20/sec02LinkedList2.c
+        #basic/Chapter02/lecture20/sec02LinkedList2.c
+        basic/Chapter02/lecture21/sec01twoWayLinkedList.c
         )
