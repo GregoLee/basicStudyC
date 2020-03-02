@@ -44,5 +44,7 @@ add_executable(basicStudyC
         #basic/Chapter02/lecture21/sec01twoWayLinkedList.c
         #basic/Chapter02/lecture22/sec01stack1.c
         #basic/Chapter02/lecture22/sec01stack2.c
-        basic/Chapter02/lecture23/sec01calculatorUseStack.c
+        #basic/Chapter02/lecture23/sec01calculatorUseStack.c
+        #basic/Chapter02/lecture24/sec01queue1.c
+        basic/Chapter02/lecture24/sec01queue2.c
         )
