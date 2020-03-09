@@ -51,5 +51,6 @@ add_executable(basicStudyC
         #basic/Chapter02/lecture25/sec02insertionSort.c
         #basic/Chapter02/lecture26/sec01quickSort.c
         #basic/Chapter02/lecture28/sec01radixSort.c
-        basic/Chapter02/lecture30/sec02binaryTreeTraversal.c
+        #basic/Chapter02/lecture30/sec02binaryTreeTraversal.c
+        basic/Chapter02/lecture31/sec01priorityQueue.c
         )
