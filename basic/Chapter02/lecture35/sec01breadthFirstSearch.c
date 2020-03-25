@@ -4,7 +4,7 @@
 /*
  * 너비 우선 탐색 (Breadth First Search)
  * 1. 개요
- *    1) 너비를 우선으로 하여 탐색을 수행하는 탐색 알고리즘
+ *    1) 너비를 우선으로 하여 탐색을 수행하는 전수 탐색 알고리즘
  *    2) 깊이 우선 탐색(Depth First Search, DFS)와 마찬가지로 맹목적으로 전체 노드를 탐색하고자 할 때 자주 사용
  *    3) 큐(Queue) 자료구조에 기초
  *    4) 고급 그래프 탐색 알고리즘에서 자주 활용
@@ -58,5 +58,80 @@ void addFront(Node *root, int index) {
 
 // 3) 큐 삽입 함수
 void queuePush(Queue *queue, int index) {
-    
+    Node *node = (Node*)malloc(sizeof(Node));
+    node->index = index;
+    if(queue->count == 0) {
+        queue->front = node;
+    }
+    else {
+        queue->rear->next = node;
+    }
+    queue->rear = node;
+    queue->count++;
+}
+
+// 4) 큐 추출 함수
+int queuePop(Queue *queue) {
+    if(queue->count == 0) {
+        printf("큐 underflow가 발생했습니다.\n");
+        return -INF;
+    }
+    Node *node = queue->front;
+    int index = node->index;
+    queue->front = node->next;
+    free(node);
+    queue->count--;
+    return index;
+}
+
+// 5) 너비 우선 탐색 함수
+void bfs(int start) {
+    Queue q;
+    q.front = q.rear = NULL;
+    q.count = 0;
+    queuePush(&q, start);
+    c[start] = 1;
+    while (q.count != 0) {
+        int x = queuePop(&q);
+        printf("%d ", x);
+        Node *cur = a[x]->next;
+        while (cur != NULL) {
+            int next = cur->index;
+            if(!c[next]) {
+                queuePush(&q, next);
+                c[next] = 1;
+            }
+            cur = cur->next;
+        }
+    }
+}
+
+// 6) 너비 우선 탐색 이용해보기
+/*
+ * 8 9
+ * 1 2
+ * 1 3
+ * 1 8
+ * 2 7
+ * 3 4
+ * 3 5
+ * 4 5
+ * 7 6
+ * 7 8
+ */
+int main(void) {
+    scanf("%d %d", &n, &m);
+    a = (Node**)malloc(sizeof(Node*)*(MAX_SIZE));
+    for(int i=1; i<=n; i++) {
+        a[i] = (Node*)malloc(sizeof(Node));
+        a[i]->next = NULL;
+    }
+    for(int i=0; i<m; i++) {
+        int x, y;
+        scanf("%d %d", &x, &y);
+        addFront(a[x], y);
+        addFront(a[y], x);
+    }
+    bfs(1);
+    return 0;
 }

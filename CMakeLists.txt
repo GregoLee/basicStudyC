@@ -57,5 +57,6 @@ add_executable(basicStudyC
         #basic/Chapter02/lecture32/sec02binarySearch.c
         #basic/Chapter02/lecture33/sec01graph1.c
         #basic/Chapter02/lecture33/sec01graph2.c
-        basic/Chapter02/lecture34/sec01depthFirstSearch.c
+        #basic/Chapter02/lecture34/sec01depthFirstSearch.c
+        basic/Chapter02/lecture35/sec01breadthFirstSearch.c
         )
